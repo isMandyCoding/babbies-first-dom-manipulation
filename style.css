@@ -1,0 +1,90 @@
+.outer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom,  purple 0%, orange 100%);
+    border: 1px solid;
+}
+
+.output {
+  text-align: center;
+  min-height: 90px;
+  height: auto;
+}
+
+.row:nth-last-of-type(1n+2) {
+  border-bottom: 1px solid;
+}
+
+.row {
+  display: flex;
+  width: 500px;
+  height: auto;
+}
+.row .boxy:nth-of-type(1){
+  flex-grow: 1;
+}
+.boxy{
+  /* float:left; */
+  width: 245px;
+  /* border: 2px solid #000; */
+  min-height: 90px;
+}
+
+input{
+  border: 1px solid black;
+  font-size: 15px;
+  display:block;
+  margin: 0px auto;
+  margin-top: 15px;
+}
+
+button{
+  margin: 5px auto;
+  width: 100px;
+  height: 25px;
+  display:block;
+  background-color: green;
+}
+
+
+
+
+button{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77d170+0,177721+100 */
+background: #77d170; /* Old browsers */
+background: -moz-linear-gradient(top,  red 0%, yellow 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  red 0%,yellow 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  red 0%,yellow 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77d170', endColorstr='#177721',GradientType=0 ); /* IE6-9 */
+border: none;
+
+}
+
+@keyframes flashIn {
+  from {
+    color: orange;
+  }
+  to {
+    color: purple;
+    }
+}
+
+
+.output span {
+  display: block;
+    color: purple;
+    animation-name: flashIn;
+    animation-duration: 3s;
+}
+
+/* .output span:last-of-type  {
+  animation-name: flashIn;
+  animation-duration: 3s;
+  /* color: lavender; */
+/* } */
+
+.output span:hover {
+  cursor: crosshair;
+}
